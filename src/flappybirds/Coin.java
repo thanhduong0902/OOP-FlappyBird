@@ -11,8 +11,7 @@ import pkg2dgamesframework.Objects;
 public class Coin extends Objects {
     private Rectangle rect;
     private float vt = 0.3f;
-    private boolean grow = false;
-    private boolean stop = false;
+    private boolean disabled = false;
 
     public boolean isDisabled() {
         return disabled;
@@ -22,7 +21,7 @@ public class Coin extends Objects {
         this.disabled = disabled;
     }
 
-    private boolean disabled = false;
+    
 
     public Coin(int x, int y, int w, int h) {
         super(x, y, w, h);

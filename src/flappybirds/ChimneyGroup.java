@@ -53,13 +53,7 @@ public class ChimneyGroup {
         
         return z;
     }
-    public int getRandomZ(){
-        Random random = new Random();
-        int z;
-        z = random.nextInt(6);
-        
-        return z;
-    }
+    
     public ChimneyGroup(){
         
         try{

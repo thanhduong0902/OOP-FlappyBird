@@ -9,8 +9,6 @@ import pkg2dgamesframework.SoundPlayer;
 
 public class Bird extends Objects{
     
-    public static int velocity = 2;
-    
     private float vt = 0;
     
     private boolean isFlying = false;

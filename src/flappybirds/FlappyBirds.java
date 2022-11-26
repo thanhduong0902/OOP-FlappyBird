@@ -76,7 +76,7 @@ public class FlappyBirds extends GameScreen{
             birds = ImageIO.read(new File("Assets/bird_sprite.png"));
         } catch (IOException ex) {}
         Point = 0;
-//        Bird.velocity = 2;
+
         chimneyGroup.resetChimneys();
     }
     
