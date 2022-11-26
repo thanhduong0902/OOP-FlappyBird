@@ -71,6 +71,10 @@ public class FlappyBirds extends GameScreen{
         bird.setPos(350, 250);
         bird.setVt(0);
         bird.setLive(true);
+        background.setChange(false);
+        try {
+            birds = ImageIO.read(new File("Assets/bird_sprite.png"));
+        } catch (IOException ex) {}
         Point = 0;
 //        Bird.velocity = 2;
         chimneyGroup.resetChimneys();
@@ -129,7 +133,10 @@ public class FlappyBirds extends GameScreen{
                 }
             }
             if(bird.getPosY()+bird.getH()>ground.getYGround()) bird.setVt(20);
-            if(bird.getPosY() + bird.getH() >800) CurrentScreen = GAMEOVER_SCREEN;
+            if(bird.getPosY() + bird.getH() >800) {
+                CurrentScreen = GAMEOVER_SCREEN;
+                
+            }
             
             }else{
             
